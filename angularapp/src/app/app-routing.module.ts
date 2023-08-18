@@ -7,6 +7,7 @@ import { OrganizerComponent } from './organizer/organizer.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { NgForm } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule, NgForm]
 })
 export class AppRoutingModule { }
