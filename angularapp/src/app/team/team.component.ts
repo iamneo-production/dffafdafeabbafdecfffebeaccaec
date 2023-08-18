@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Team } from 'src/models/team.model';
-import { AdminService } from '../services/admin.service';
+// import { AdminService } from '../services/admin.service';
 import { Player } from 'src/models/player.model';
 
 
@@ -10,7 +10,7 @@ import { Player } from 'src/models/player.model';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-  constructor(private adminService: AdminService) { }
+  // constructor(private adminService: AdminService) { }
 
 
   ngOnInit(): void {
