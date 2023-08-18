@@ -3,13 +3,14 @@
 
   <form (ngSubmit)="register()" #registrationForm="ngForm" novalidate>
     <label for="username">Username:</label>
-    <input type="text" id="username" [(ngModel)]="username" name="username" [ngModelOptions]="{standalone: true}" required
-           #usernameNgModel="ngModel">
+    <input type="text" id="username" [(ngModel)]="username" name="username"  required
+           #usernameNgModel="ngModel"
+           >
     <div *ngIf="usernameNgModel.invalid && (usernameNgModel.dirty || usernameNgModel.touched)"
          class="error-message">Username is required</div>
 
     <label for="password">Password:</label>
-    <input type="password" id="password" [(ngModel)]="password" name="password" [ngModelOptions]="{standalone: true}" required
+    <input type="password" id="password" [(ngModel)]="password" name="password"  required
            #passwordNgModel="ngModel">
     <div *ngIf="passwordNgModel.invalid && (passwordNgModel.dirty || passwordNgModel.touched)"
          class="error-message">Password is required</div>
@@ -18,7 +19,7 @@
     </div>
 
     <label for="confirmPassword">Confirm Password:</label>
-    <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" [ngModelOptions]="{standalone: true}" required
+    <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword"  required
            #confirmPasswordNgModel="ngModel">
     <div *ngIf="confirmPasswordNgModel.invalid && (confirmPasswordNgModel.dirty || confirmPasswordNgModel.touched)"
          class="error-message">Confirm Password is required</div>
